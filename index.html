@@ -4,10 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
+    <!-- stylesheet css -->
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+    rel="stylesheet"
+  />
+    <title>Weather Dashboard</title>
   </head>
+
   <body>
-    <script src="config.js"></script>
-	<script src="index.js"></script>
+  <!-- apply bootstrap grid in order to get page layout the way you want -->
+    <header id="HeaderSpace">
+      <h1 id='page-title'>Weather Dashboard</h1>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+      <input class="search">
+
+     </input>
+     <button id="searchButton">Search</button>
+     <div id="searchHistory">
+     </div>
+     </div>
+     <div class="col-md-9">
+      <div class="display">
+      </div>
+      <div class="forcastDisplay"></div>
+    </div>
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
